@@ -31,10 +31,10 @@ Nous n'avons pas réussi à trouver comment lier les emails collectés sur nos L
 
 ##### Actions marketing :
 
-- 1. Bot twitter : Il fait une recherche sur les searchterms suivants: formation, reconversion & entreprenariat. On recherche les dernières personnes qui ont twitté avec ces mots clés et on envoie un tweet ciblé avec la bonne landing page.
+- I. Bot twitter : Il fait une recherche sur les searchterms suivants: formation, reconversion & entreprenariat. On recherche les dernières personnes qui ont twitté avec ces mots clés et on envoie un tweet ciblé avec la bonne landing page.
 
 Cibler les noms des comptes (bde, fac, universités, entreprenariat, reconversion). Il envoie ensuite un message ciblé aux comptes qui contiennent ces mots clés et nous leur envoyons un tweet ciblé.
 
 Nous avons utilisé le scheduler d'Heroku pour que les actions se répètent tous les jours afin d'avoir une action sur le long terme.
 
-- 2. Bot linkedin: Gros problème ici : Nous n'avons pas réussi à récupérer les token/token secret afin de coder l'api, on s'est prit un joli "try again later"... 
+- II. Bot linkedin: Gros problème ici : Nous n'avons pas réussi à récupérer les token/token secret afin de coder l'api, on s'est prit un joli "try again later"... 
