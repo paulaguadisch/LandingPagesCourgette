@@ -1,2 +1,923 @@
-<h1>Home#lp3</h1>
-<p>Find me in app/views/home/lp3.html.erb</p>
+<!-- MAIN WRAPPER -->
+<div class="body-wrap">
+    <div id="st-container" class="st-container">
+
+        <nav class="st-menu st-effect-1" id="menu-1">
+    <div class="st-profile">
+        <div class="st-profile-user-wrapper">
+            <div class="profile-user-image">
+                <img src="<%= image_path('lp3-device.png') %>" class="img-circle" />
+            </div>
+            <div class="profile-user-info">
+                <span class="profile-user-name">Bertram Ozzie</span>
+                <span class="profile-user-email">username@example.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="st-menu-list mt-2">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-bookmarks-outline"></i> Theme documentation
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-cart-outline"></i> Purchase Tribus
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="st-menu-title">Account</h3>
+    <div class="st-menu-list">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-person-outline"></i> User profile
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-location-outline"></i> My addresses
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ion-card"></i> My cards
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-unlocked-outline"></i> Password update
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="st-menu-title">Support center</h3>
+    <div class="st-menu-list">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-information-outline"></i> About Tribus
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ion-ios-email-outline"></i> Contact &amp; support
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-camera"></i> Getting started
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <!-- Header -->
+                    <div class="header">
+    <!-- Top Bar -->
+    
+    <!-- Global Search -->
+    <section id="sctGlobalSearch" class="global-search global-search-overlay">
+    <div class="container">
+        <div class="global-search-backdrop mask-dark--style-2"></div>
+
+        <!-- Search form -->
+        <form class="form-horizontal form-global-search z-depth-2-top" role="form">
+            <div class="px-4">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" class="search-input" placeholder="Type and hit enter ...">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-search" data-toggle="global-search" title="Close search bar"></a>
+        </form>
+    </div>
+</section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar-inverse bg-dark ">
+        <div class="container navbar-container">
+            <!-- Brand/Logo -->
+                        <a class="navbar-brand" href="../../index.html">
+               <!--  <img src="../../assets/images/logo-1-a.png" class="d-none d-lg-inline-block" alt="Boomerang">
+                <img src="../../assets/images/logo-1-a.png" class="d-lg-none" alt="Boomerang">  -->           </a>
+            <%= image_tag('lp3-thp-logo.png') %>    
+            <div class="d-inline-block">
+                <!-- Navbar toggler  -->
+                <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_main">
+    <!-- Navbar search - For small resolutions -->
+    <div class="navbar-search-widget b-xs-bottom py-3 d-lg-none d-none">
+        <form class="" role="form">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                <button class="btn btn-base-3" type="button">Go!</button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Navbar links -->
+    
+        
+        <li class="nav-item dropdown megamenu">
+            <div class="dropdown-menu">
+                <div class="mega-dropdown-menu row row-no-padding">
+                    <div class="mega-dropdown-col mega-dropdown-col-cover mega-dropdown-col-cover--left col-lg-5 d-none d-lg-block d-xl-block" style="background-image: url(<%= asset_path 'lp3-img-11.jpg' %>); background-position: center center; ;">
+                        <span class="mask mask-base-1--style-1 alpha-8"></span>
+                        <div class="mega-dropdown-col-inner d-flex align-items-center no-padding">
+                            <div class="col">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="px-4">
+                                            <h2 class="heading heading-2 strong-600 c-white">
+                                                Documentation and Shortcodes
+                                            </h2>
+                                            <p class="strong-300 c-white mt-4">
+                                                Get started fast and easy with Boomerang using the documentation and shortcode examples. No matter
+                                                you are a developer or new to web design, you will
+                                                find our theme very easy to customize with
+                                                an intuitive HTML markup.
+                                            </p>
+                                            <div class="btn-container mt-5">
+                                                <a href="../../documentation/getting-started/introduction.html" target="_blank" class="btn btn-styled btn-white btn-outline btn-circle">Read the Docs</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-2 ml-lg-auto">
+                        <ul class="megadropdown-links">
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/alerts.html">
+                                    Alerts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/badges.html">
+                                    Badges
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/buttons.html">
+                                    Buttons
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/cards.html">
+                                    Cards
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/collapse.html">
+                                    Collapse
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/countdown.html">
+                                    Countdown
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/dropdown.html">
+                                    Dropdowns
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/forms.html">
+                                    Forms
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/instagram.html">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/lightbox.html">
+                                    Lightbox
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/maps.html">
+                                    Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/masonry.html">
+                                    Masonry
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-lg-2">
+                        <ul class="megadropdown-links">
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/pagination.html">
+                                    Pagination
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/progress.html">
+                                    Progress bars
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/recaptcha.html">
+                                    Recaptcha
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/content/titles.html">
+                                    Section titles
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/forms.html#ex_component_sliders">
+                                    Sliders
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/tabs.html">
+                                    Tabs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/components/typed-animations.html">
+                                    Typed animations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/headers.html">
+                                    Headers
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../html/default/sliders/boomerang-slider/index.html">
+                                    Boomerang slider
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../html/default/sliders/revolution-slider/index.html">
+                                    Revolution slider
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/footers.html">
+                                    Footers
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/hero.html">
+                                    Hero blocks
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-lg-2">
+                        <ul class="megadropdown-links">
+
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/icon.html">
+                                    Icon blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/jobs.html">
+                                    Job blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/pricing.html">
+                                    Pricing blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/product.html">
+                                    Product blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/real-estate.html">
+                                    Real-Estate blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/team.html">
+                                    Team blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/testimonials.html">
+                                    Testimonial blocks
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="../../documentation/blocks/comments.html">
+                                    Comment blocks
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+   
+
+<div class="pl-4 d-none d-lg-inline-block">
+    <a href="https://goo.gl/9BbH7R" class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">
+        Nous contacter 
+            </a>
+</div>
+        </div>
+    </nav>
+</div>
+
+                    <!-- Slider -->
+                    <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset="">
+    <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-items="1" data-swiper-space-between="0">
+        <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="8000">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'lp3-img-11.jpg' %>); opacity: 1; background-position: center center;">
+                    <span class="mask bg-dark alpha-9"></span>
+                    <div class="container d-flex align-items-center">
+                        <div class="col">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-8">
+                                    <h2 class="heading display-3 strong-600 text-normal animated" data-animation-in="fadeInDownBig" data-animation-delay="200">
+                                        Modern &amp; Powerful
+                                    </h2>
+                                    <p class="text-lg line-height-1_6 mt-4 animated" data-animation-in="fadeInUpBig" data-animation-delay="200">
+                                        Not only you get great features and modular components, but also a theme that works as a framework, meaning you can build on it. An easy to understand markup with intuitive tools that will ease your work for sure.
+                                    </p>
+                                    </br></br></br></br>
+                                    </br></br><p>The Hacking Project est une jeune pousse qui souhaite apporter à tous les compétences necessaires pour le monde de demain. Nos formations se déroulent du lundi au vendredi de 9h à 20h pendant 2 mois 1/2. Chez nous, pas de professeurs, pas de locaux.
+                                    </p>
+
+                                    <a href="https://goo.gl/9BbH7R" class="btn btn-styled btn-base-1 btn-circle mt-5 animated" data-animation-in="fadeInUpBig" data-animation-delay="1000">
+                                        Get started
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="slice bg-base-1">
+                        <div class="sct-inner container">
+                            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                <div class="col-lg-4">
+                                    <div class="icon-block icon-block--style-1-v1">
+                                        <div class="block-icon c-white">
+                                            <!-- <i class="ion-ios-speedometer-outline"></i> -->
+                                            <%= image_tag('lp3-speech-bubbles.png') %>
+                                        </div>
+                                        <div class="block-content">
+                                            <h3 class="heading heading-4 c-base-text-1 strong-500">Peer Learning</h3></br>
+                                            <p class="mt-3">
+                                                C'est une grande famille qui comprend les moussaillons, les corsaires, les mentors dans une ambiance bienveillante et accueillante. Vous en profitez et l'animez.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-block icon-block--style-1-v1">
+                                        <div class="block-icon c-white">
+                                            <%= image_tag('lp3-writing.png') %>
+                                        </div>
+                                        <div class="block-content">
+                                            <h3 class="heading heading-4 c-base-text-1 strong-500">Des projets toutes les semaines</h3>
+                                            <p class="mt-3">
+                                                Savoir lire et écrire le code permet de faire des choses qui vous étaient totalement impossibles. Au lieu de passer une après midi entière à faire du copier coller votre machine le fait à votre place, plus vite et plus précisément.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-block icon-block--style-1-v1">
+                                        <div class="block-icon c-white">
+                                            <%= image_tag('lp3-checking.png') %>
+                                        </div>
+                                        <div class="block-content">
+                                            <h3 class="heading heading-4 c-base-text-1 strong-500">Gainez en compétences</h3></br>
+                                            <p class="mt-3">
+                                                La maîtrise d'au moins un langage de programmation est une compétence valorisée. Apprendre à coder est un énorme plus sur le CV ! Cela démontre une forte capacité d'adaptation. Un employeur saura le voir et le comprendre.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slice-lg sct-color-1">
+                        <div class="container">
+                            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                <div class="col-lg-5">
+                                    <div class="px-4 text-center text-lg-left">
+                                        <h3 class="heading heading-3 strong-500">
+                                            Le cycle d'apprentissage est court et intensif.
+                                        </h3>
+                                        <!-- <footer class="blockquote-footer">
+                                            <cite title="Source Title"> </cite>
+                                        </footer> -->
+                                        <p class="text-lg line-height-1_8 mt-4">
+                                            Avec The Hacking Project vous allez avoir des notions solides pour une reconversion professionnelle, en seulement deux mois.
+                                        </p>
+                                        <!-- <a href="#" class="btn btn-styled btn-base-1 btn-circle mt-4">Learn more</a> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 ml-lg-auto">
+                                    <div class="">
+                                        <!-- Progress bar - Small -->
+                                        <h4 class="progress-tooltip text-uppercase" style="left: 60%;">Programmation front-end</h4>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-base-4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                        </div>
+
+                                        <h4 class="progress-tooltip text-uppercase" style="left: 90%;">Ruby on Rails</h4>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-base-4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        </div>
+
+                                        <h4 class="progress-tooltip text-uppercase" style="left: 70%;">Le langage Ruby</h4>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-base-4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                        </div>
+
+                                        <!-- <h4 class="progress-tooltip text-uppercase" style="left: 85%;">Marketing</h4>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-base-4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slice-lg sct-color-2 border-top border-bottom">
+                        <div class="container">
+                            <div class="section-title section-title--style-1 text-center mb-2">
+                                <h3 class="section-title-inner">
+                                    <span>Le programme</span>
+                                </h3>
+                                <span class="section-title-delimiter clearfix d-none"></span>
+                            </div>
+
+                            <span class="clearfix"></span>
+
+                            <div class="fluid-paragraph fluid-paragraph-sm c-gray-light strong-300 text-center">
+                                Cool ! Je suis convaincu pour faire THP, mais, globalement qu'y apprend-t-on ? Quelles sont les compétences que j’aurai à la fin ? Quel est le calendrier ?
+                            </div>
+
+                            <span class="space-xs-xl"></span>
+
+                            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3">
+                                        <div class="block-body">
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-gray-dark mt-4">
+                                                    <%= image_tag('lp3-html.png') %>
+                                                </div>
+                                                <div class="block-content mt-1">
+                                                    <h3 class="heading heading-5 strong-500">
+                                                        L'HTML et le CSS
+                                                    </h3>
+                                                    <p>
+                                                        En une semaine vous serez capable de refaire la home page de google ou la landing page de votre projet. En 3 semaines vous aurez le niveau pour vendre vos réalisations.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3">
+                                        <div class="block-body">
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-gray-dark mt-4">
+                                                   <%= image_tag('lp3-ruby.jpg') %>
+                                                </div></br>
+                                                <div class="block-content mt-1">
+                                                    <h3 class="heading heading-5 strong-500">
+                                                        Ruby
+                                                    </h3>
+                                                    <p>Avec Ruby vous découvrirez le scrapping de data, l'utilisation du deep web et les bases de la célèbre Programmation Orientée Objet.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3">
+                                        <div class="block-body">
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-gray-dark mt-4">
+                                                    <%= image_tag('lp3-rails.jpg') %>
+                                                </div></br>
+                                                <div class="block-content mt-1">
+                                                    <h3 class="heading heading-5 strong-500">
+                                                       Ruby On Rails
+                                                    </h3>
+                                                    <p>
+                                                        Découvrez l'un des framework web les plus célèbres. Il vous permettra de rapidement coder une application web fonctionnelle, avec une base de données.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3">
+                                        <div class="block-body">
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-gray-dark mt-4">
+                                                    <%= image_tag('lp3-js.png') %>
+                                                </div>
+                                                <div class="block-content mt-1">
+                                                    <h3 class="heading heading-5 strong-500">
+                                                        JavaScript
+                                                    </h3>
+                                                    <p>
+                                                        Javascript vous permet de rendre votre site dynamique et d'inter-agir avec vos utilisateurs.
+                                                    </p></br></br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+
+                    
+
+                    <section class="slice-lg sct-color-1 animate-hover-slide-3">
+                        <div class="container">
+                            <div class="section-title section-title--style-1 text-center mb-2">
+                                <h3 class="section-title-inner text-normal">
+                                    Our team
+                                </h3>
+                                <span class="section-title-delimiter clearfix d-none"></span>
+                            </div>
+
+                            <span class="clearfix"></span>
+
+                            <div class="fluid-paragraph fluid-paragraph-sm c-gray-light strong-300 text-center">
+                                Nous préférons laisser nos corsaires parler à notre place.
+                            </div>
+
+                            <span class="space-xs-xl"></span>
+
+                            <div class="row cols-xs-space cols-sm-space">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3 block--style-3-v2">
+                                        <div class="figure block-image">
+                                            <!-- <div class="view view-first">
+                                                <a href="#">
+                                                    <img src="../../assets/images/img-b-1.jpg">
+                                                </a>
+                                            </div> -->
+                                            <div class="figcaption">
+                                                <ul class="social-icons text-right">
+                                                    <li class="text pull-left">
+                                                        <small>More on:</small>
+                                                    </li>
+                                                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3 block--style-3-v2">
+                                        <div class="figure block-image">
+                                            <div class="view view-first">
+                                                <a href="#">
+                                                    <%= image_tag('lp3-isabelle.jpg') %>
+                                                </a>
+                                            </div>
+                                            <div class="figcaption">
+                                                <ul class="social-icons text-right">
+                                                    <li class="text pull-left">
+                                                        <small>More on:</small>
+                                                    </li>
+                                                    <li class="linkedin"><a href="https://fr.linkedin.com/in/bonnetisabelle"><%= image_tag('lp3-li.png') %></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-body">
+                                            <h3 class="heading heading-6 strong-600 mb-0">Isabelle Bonnet</h3>
+                                            <!-- <h4 class="heading heading-sm strong-300">Internal Markets Administrator</h4> -->
+
+                                            <p>
+                                                "En plus de me donner suffisamment de bases en code pour lancer AlgoSki, The Hacking Project m'a réappris à apprendre. Je recommande la formation !"
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3 block--style-3-v2">
+                                        <div class="figure block-image">
+                                            <div class="view view-first">
+                                                <a href="#">
+                                                    <%= image_tag('lp3-maxime.png') %>
+                                                </a>
+                                            </div>
+                                            <div class="figcaption">
+                                                <ul class="social-icons text-right">
+                                                    <li class="text pull-left">
+                                                        <small>More on:</small>
+                                                    </li>
+                                                    <li class="linkedin"><a href="https://fr.linkedin.com/in/maximesouillat"><%= image_tag('lp3-li.png') %></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-body">
+                                            <h3 class="heading heading-6 strong-600 mb-0">Maxime Souillat</h3>
+                                            <!-- <h4 class="heading heading-sm strong-300">Internal Markets Administrator</h4> -->
+
+                                            <p>
+                                                "En deux mois, j'avais le niveau de développeur. Très pratique pour parler aux devs quand on fait du produit, ou pour tester à la volée plein de scripts rapides."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <!-- <div class="col-lg-3 col-md-6">
+                                    <div class="block block--style-3 block--style-3-v2">
+                                        <div class="figure block-image">
+                                            <!-- <div class="view view-first">
+                                                <a href="#">
+                                                    <img src="../../assets/images/img-b-4.jpg">
+                                                </a>-->
+                                            </div> 
+                                            <!-- div class="figcaption">
+                                                <ul class="social-icons text-right">
+                                                    <li class="text pull-left">
+                                                        <small>More on:</small>
+                                                    </li>
+                                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+
+                    <section class="slice-lg bg-base-1">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="heading c-base-text-1 heading-1 strong-500"> Nos prochains événements
+                                        <a href="https://fr-fr.facebook.com/thehackingproject/"><%= image_tag('lp3-facebook-black.png') %></a>
+                                    </h2>
+                                    <div class="fluid-paragraph fluid-paragraph-sm strong-300 mt-4">
+                                        <p class="text-lg line-height-1_8 c-base-text-1">
+                                            Conscient que notre concept innovant est source de questions et d'interrogations, nous n'hésitons pas à venir à votre rencontre lors de nombreux événements un peu partout en France et dans le monde. Voici donc la liste de nos événements. Si votre ville n'est pas dans la liste n'hesitez pas à nous envoyer un message. Nous vous informerons sur la possibilité d'ouvrir ou non une session chez vous
+                                        </p>
+                                        <!-- <div class="btn-container mt-5">
+                                            <a href="#" class="btn btn-styled btn-white btn-circle">
+                                                Purchase now
+                                                <span class="badge badge-pill bg-dark c-white">$15 USD</span>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slice sct-color-1">
+                        <div class="container">
+                            <div class="section-title section-title--style-1 text-center">
+                                <h3 class="section-title-inner text-normal">
+                                    <span>C'est bien beau d'apprendre à coder chez THP mais, on peut faire quoi après The Hacking Project - Code ?</span>
+                                </h3>
+                            </div>
+
+                            <div class="row cols-md-space cols-sm-space cols-xs-space">
+                                <div class="col-lg-4">
+                                    <div class="block block-image-holder image-animate-wrapper">
+                                        <div class="block-image image-animate--hover">
+                                            <%= image_tag('lp3-boite.png') %>
+                                        </div>
+
+                                        <div class="pt-4">
+                                            <!-- <span class="heading heading-xs text-uppercase strong-300">Oct 15, 2018</span> -->
+                                            <a href="#" class="heading heading-4 d-block strong-500 mt-1">Monter votre boîte</a>
+                                            <p class="mt-3">
+                                                50% des moussaillons qui font THP ressortent avec la volonté de créer une entreprise qui vous permettra de vous épanouir loin du salariat et des contraintes qu'il peut parfois engendrer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="block block-image-holder image-animate-wrapper">
+                                        <div class="block-image image-animate--hover">
+                                            <a href="#">
+                                               <%= image_tag('lp3-competences.png') %>
+                                            </a>
+                                        </div>
+
+                                        <div class="pt-4">
+                                           <!--  <span class="heading heading-xs text-uppercase strong-300">Oct 15, 2018</span> -->
+                                            <a href="#" class="heading heading-4 d-block strong-500 mt-1">Double compétence</a>
+                                            <p class="mt-3">
+                                                40% de nos corsaires ont fait THP car ils se sont dit que le code pouvait leur être utile dans leurs métiers : que ce soit l'automatisation de tâches, la réalisation de pages web, ou même comprendre les devs quand ils parlent, THP donne facile 5k€ à votre salaire.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="block block-image-holder image-animate-wrapper">
+                                        <div class="block-image image-animate--hover">
+                                            <a href="#">
+                                                <%= image_tag('lp3-dev.png') %>
+                                            </a>
+                                        </div>
+
+                                        <div class="pt-4">
+                                            <!-- <span class="heading heading-xs text-uppercase strong-300">Oct 15, 2018</span> -->
+                                            <a href="#" class="heading heading-4 d-block strong-500 mt-1">Développeur</a>
+                                            <p class="mt-3">
+                                                Enfin, 10% de ceux ayant fait The Hacking Project décident de se tourner vers la carrière de développeur en informatique.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FOOTER -->
+                    <footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                <div class="col-lg-5">
+                    <div class="col">
+                        <!-- <img src="../../assets/images/logo/logo-1-c.png"> -->
+                        <span class="clearfix"></span>
+                       <!--  <span class="heading heading-sm c-gray-light strong-400">One template. Infinite solutions.</span> -->
+                       <!--  <p class="mt-3">
+                            All the components included in Boomerang are built to the same level of quality as Bootstrap and highlighted with several example pages.
+                        </p> -->
+
+                        <div class="copyright mt-4">
+                            <p>
+                                Copyright &copy; 2018                                <a href="#" target="_blank">
+                                    <strong>TeamCourgette</strong>
+                                </a> -
+                                All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-2">
+                    <div class="col">
+                       <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
+                           Support
+                       </h4>
+
+                       <ul class="footer-links">
+                            <li><a href="#" title="Help center">Help center</a></li>
+                            <li><a href="#" title="Discussions">Discussions</a></li>
+                            <li><a href="#" title="Contact support">Contact</a></li>
+                            <li><a href="#" title="Blog">Blog</a></li>
+                            <li><a href="#" title="Jobs">FAQ</a></li>
+                        </ul>
+                     </div>
+                </div> -->
+
+                <!-- <div class="col-lg-2">
+                    <div class="col">
+                        <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
+                            Company
+                        </h4>
+
+                        <ul class="footer-links">
+                             <li>
+                                 <a href="#" title="Home">
+                                     Home
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#" title="About us">
+                                     About us
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#" title="Services">
+                                     Services
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#" title="Blog">
+                                     Blog
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#" title="Contact">
+                                     Contact
+                                 </a>
+                             </li>
+                         </ul>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-3">
+                    <div class="col">
+                        <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
+                            Get in touch
+                        </h4>
+
+                        <ul class="social-media social-media--style-1-v4">
+                            <li>
+                                <a href="https://fr-fr.facebook.com/thehackingproject/" class="facebook" target="_blank" data-toggle="tooltip" data-original-title="Facebook">
+                                    <%= image_tag('lp3-facebook.png') %>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/the_hacking_pro" class="twitter" target="_blank" data-toggle="tooltip" data-original-title="Twitter">
+                                    <%= image_tag('lp3-twitter.png') %>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://fr.linkedin.com/school/the_hacking_project/?trk=similar-companies_org_title" class="linkedin" target="_blank" data-toggle="tooltip" data-original-title="Linkedin">
+                                    <%= image_tag('lp3-linkedin.png') %>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TheHackingProject" class="github" target="_blank" data-toggle="tooltip" data-original-title="Github">
+                                    <%= image_tag('lp3-github.png') %>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+                </div>
+            </div>
+        </div><!-- END: st-pusher -->
+    </div><!-- END: st-container -->
+</div><!-- END: body-wrap -->
+
+<!-- SCRIPTS -->
+<a href="#" class="back-to-top btn-back-to-top"></a>
+
+
