@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 
 <meta charset="utf-8">
@@ -9,6 +11,10 @@
 <meta name="author" content="Webpixels">
 
 <title>Boomerang - Multipurpose Bootstrap Theme</title>
+
+<!-- Favicon -->
+<link href="../../assets/images/favicon.png" rel="icon" type="image/png">
+
 
 </head>
 <body>
@@ -124,9 +130,9 @@
     <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar-inverse bg-dark ">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="#">
-                			<%= image_tag('LP1_logo_thp.png') %>
-                        </a>
+                        <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Boomerang">
+                <img src="../../assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Boomerang">            </a>
             
             <div class="d-inline-block">
                 <!-- Navbar toggler  -->
@@ -450,18 +456,15 @@
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
                 <!-- Slide -->
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url( <%= asset_path 'LP1_etudiants.jpg' %>); background-position: bottom center;">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/backgrounds/slider/img-5.jpg); background-position: bottom center;">
+                    <span class="mask mask-dark--style-1 animated" data-animation-in="fadeIn" data-animation-delay="200"></span>
                     <div class="container container-sm d-flex align-items-center">
                         <div class="col">
                             <div class="row py-5 text-center">
                                 <div class="col col-xs-12">
                                     <h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="500">
-                                        The Hacking Project </h2> 
-
-                                        <h3 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="500">
-                                        	Apprends à coder en 3 mois, à temps plein, gratuitement
-                                        </h3>
-                                   
+                                        Just imagine your new website and you'll have it in no time.
+                                    </h2>
 
                                     <a href="#" class="btn btn-styled btn-base-1 btn-circle mt-5 animated" data-animation-in="flipInY" data-animation-delay="1500" data-scroll-to="#scrollToSection">Learn more</a>
                                 </div>
@@ -471,6 +474,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
     </div>
 </section>
 
@@ -480,20 +490,19 @@
                                 <div class="col-lg-4 col-12">
                                     <div class="card card-colored bg-base-1">
                                         <div class="card-body px-4">
-                                        	<a href="#" class="image featured" style="border-radius: 30%"><%= image_tag('LP1_peer.jpg', height:250, length:240) %></a>
-	                                            <div class="icon-block--style-1-v5 text-center">
-	                                                <div class="block-icon-lg c-white mt-3">
-	                                                    <i class="icon-basic-heart"></i>
-	                                                </div>
-	                                                <div class="block-content mt-3">
-	                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
-	                                                        Peer Learning
-	                                                    </h3>
-	                                                    <p class="mt-3">
-	                                                        Une méthode d'apprentissage où les élèves deviennent professeurs et doivent s'expliquer entre eux les concepts à apprendre. Met l'accent sur l'entraide, la communauté, et la communication.
-	                                                    </p>
-	                                                </div>
-	                                            </div>
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-white mt-3">
+                                                    <i class="icon-basic-heart"></i>
+                                                </div>
+                                                <div class="block-content mt-3">
+                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
+                                                        Elegant &amp; responsive
+                                                    </h3>
+                                                    <p class="mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -501,20 +510,19 @@
                                 <div class="col-lg-4 col-12">
                                     <div class="card card-colored bg-base-2">
                                         <div class="card-body px-4">
-                                        	<a href="#" class="image featured"><%= image_tag('LP1_baby.jpeg', height:280, length:280) %></a>
-	                                            <div class="icon-block--style-1-v5 text-center">
-	                                                <div class="block-icon-lg c-white mt-3">
-	                                                    <i class="icon-basic-pencil-ruler"></i>
-	                                                </div>
-	                                                <div class="block-content mt-3">
-	                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
-	                                                        100% gratuit
-	                                                    </h3>
-	                                                    <p>
-	                                                        The Hacking Project est un bootcamp de développement web entièrement gratuit, accessible à tous et partout dans le monde.
-	                                                    </p>
-	                                                </div>
-	                                            </div>
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-white mt-3">
+                                                    <i class="icon-basic-pencil-ruler"></i>
+                                                </div>
+                                                <div class="block-content mt-3">
+                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
+                                                        Fully cutomizable
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -522,20 +530,19 @@
                                 <div class="col-lg-4 col-12">
                                     <div class="card card-colored bg-base-1">
                                         <div class="card-body px-4">
-                                        	<a href="#" class="image featured"><%= image_tag('LP1_machine.jpg', height:250, length:140) %></a>
-	                                            <div class="icon-block--style-1-v5 text-center">
-	                                                <div class="block-icon-lg c-white mt-3">
-	                                                    <i class="icon-basic-accelerator"></i>
-	                                                </div>
-	                                                <div class="block-content mt-3">
-	                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
-	                                                        Développement web
-	                                                    </h3>
-	                                                    <p>
-	                                                        Le but de cette formation: te donner les outils techniques pour maîtriser les technologies web (front & back-end) et pouvoir créer des sites de A à Z.
-	                                                    </p>
-	                                                </div>
-	                                            </div>
+                                            <div class="icon-block--style-1-v5 text-center">
+                                                <div class="block-icon-lg c-white mt-3">
+                                                    <i class="icon-basic-accelerator"></i>
+                                                </div>
+                                                <div class="block-content mt-3">
+                                                    <h3 class="heading heading-4 strong-500 text-capitalize">
+                                                        Fast and robust
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -723,7 +730,7 @@
                                                     <p>
                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque congue augue rutrum neque iaculis porta.
                                                     </p>
-                                                    <a href="#" class="link link-sm mt-3">En savoir plus</a>
+                                                    <a href="#" class="link link-sm mt-3">Learn more</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1322,3 +1329,4 @@
 <a href="#" class="back-to-top btn-back-to-top"></a>
 
 </body>
+</html>
