@@ -19,6 +19,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootsnap', '>= 1.1.0', require: false 
+gem 'dotenv'
+gem 'mailjet'
 
 group :development, :test do
   gem 'sqlite3'
