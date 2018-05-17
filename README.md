@@ -33,6 +33,9 @@ Nous n'avons pas réussi à trouver comment lier les emails collectés sur nos L
 
 - I. Bot twitter : Il fait une recherche sur les searchterms suivants: formation, reconversion & entreprenariat. On recherche les dernières personnes qui ont twitté avec ces mots clés et on envoie un tweet ciblé avec la bonne landing page.
 
+Voici le lien Twitter: https://twitter.com/ApprendreCoder
+On a exécuté 2 tweets pour voir si ça marchait. Notre task marche donc bien mais nous ne les avons pas exécutés longtemps pour promouvoir mais tu pourras test en local
+
 Cibler les noms des comptes (bde, fac, universités, entreprenariat, reconversion). Il envoie ensuite un message ciblé aux comptes qui contiennent ces mots clés et nous leur envoyons un tweet ciblé.
 
 Nous avons utilisé le scheduler d'Heroku pour que les actions se répètent tous les jours afin d'avoir une action sur le long terme.
