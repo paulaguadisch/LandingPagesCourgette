@@ -3,12 +3,14 @@ source 'https://rubygems.org'
 # authentification
 #gem 'devise'
 #gem 'pundit'
-
+ruby '2.3.4'
 gem 'rails',          '5.2.0'
 gem 'bcrypt',         '3.1.11'
 gem 'devise'
 gem 'mailjet'
 gem 'linkedin'
+gem 'twitter'
+
 
 gem 'puma'
 gem 'sass-rails'
