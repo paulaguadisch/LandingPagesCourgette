@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require vendor-bootstrap.min.css
  *= require swiper.min.css
  *= require hamburgers.min.css
  *= require animate.min.css
@@ -22,8 +23,10 @@
  *= require line-icons-pro.css
  *= require arrows-linea-icons.css
  *= require basic-linea-icons.css
+ *= require commerce-linea-icons.css
  *= require ecommerce-linea-icons.css
  *= require software-linea-icons.css
+ *= require assets-boomerang.min.css
  *= require custom-style.css
  *= require bootstrap.min.css
  *= require boomerang.min.css
