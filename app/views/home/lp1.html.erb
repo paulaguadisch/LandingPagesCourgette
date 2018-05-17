@@ -130,9 +130,9 @@
     <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar-inverse bg-dark ">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="../../index.html">
-                <img src="../../assets/images/logo/logo-1-a.png" class="d-none d-lg-inline-block" alt="Boomerang">
-                <img src="../../assets/images/logo/logo-1-a.png" class="d-lg-none" alt="Boomerang">            </a>
+                         <a class="navbar-brand" href="#">
+                            <%= image_tag('LP1_logo_thp.png') %>
+                        </a>
             
             <div class="d-inline-block">
                 <!-- Navbar toggler  -->
@@ -456,15 +456,17 @@
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
                 <!-- Slide -->
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/backgrounds/slider/img-5.jpg); background-position: bottom center;">
-                    <span class="mask mask-dark--style-1 animated" data-animation-in="fadeIn" data-animation-delay="200"></span>
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url( <%= asset_path 'LP1_etudiants.jpg' %>); background-position: bottom center;">
                     <div class="container container-sm d-flex align-items-center">
                         <div class="col">
                             <div class="row py-5 text-center">
                                 <div class="col col-xs-12">
-                                    <h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="500">
-                                        Just imagine your new website and you'll have it in no time.
-                                    </h2>
+                                      <h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="500">
+                                        The Hacking Project </h2> 
+
+                                        <h3 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="500">
+                                            Apprends à coder en 3 mois, à temps plein, gratuitement
+                                        </h3>
 
                                     <a href="#" class="btn btn-styled btn-base-1 btn-circle mt-5 animated" data-animation-in="flipInY" data-animation-delay="1500" data-scroll-to="#scrollToSection">Learn more</a>
                                 </div>
