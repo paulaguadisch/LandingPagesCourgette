@@ -10,10 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.min
+//= require jquery.countdown.min
+//= require jquery.easypiechart.min
+//= require jquery.fancybox.min
+//= require jquery.gradientify.min
+//= require jquery.headroom.min
+//= require jquery.countTo
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require jquery.min
 //= require popper.min
 //= require bootstrap.min
 //= require slidebar
@@ -21,19 +27,13 @@
 //= require bootstrap-growl.min
 //= require scrollpos-styler
 //= require adaptive-backgrounds
-//= require jquery.countdown.min
 //= require dropzone.min
-//= require jquery.easypiechart.min
-//= require jquery.fancybox.min
 //= require flatpickr.min
 //= require flip.min
 //= require footer-reveal.min
-//= require jquery.gradientify.min
 //= require headroom.min
-//= require jquery.headroom.min
 //= require input-mask.min
 //= require instafeed
-//= require jquery.countTo
 //= require nouislider.min
 //= require paraxify.min
 //= require select2.min
