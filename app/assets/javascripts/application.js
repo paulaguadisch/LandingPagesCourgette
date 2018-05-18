@@ -9,7 +9,7 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+
 //= require jquery
 //= require jquery.min
 //= require jquery.countdown.min
@@ -26,6 +26,7 @@
 //= require slidebar
 //= require classie
 //= require bootstrap-growl.min
+//= require boomerang.min
 //= require scrollpos-styler
 //= require adaptive-backgrounds
 //= require dropzone.min
@@ -48,5 +49,5 @@
 //= require wow.min
 //= require isotope.min
 //= require imagesloaded.pkgd.min
-//= require boomerang.min
+
 //= require_tree .
