@@ -1,4 +1,4 @@
-## Bienvenue à toi correcteur :
+## Hey ! Bienvenue à toi correcteur :
 Boulot réalisé avec sueur et pls par la team courgette  : Tatijana, Ana, Richard, Paul & Olivier.
 
 
