@@ -26,7 +26,6 @@
 //= require slidebar
 //= require classie
 //= require bootstrap-growl.min
-//= require boomerang.min
 //= require scrollpos-styler
 //= require adaptive-backgrounds
 //= require dropzone.min
@@ -49,5 +48,5 @@
 //= require wow.min
 //= require isotope.min
 //= require imagesloaded.pkgd.min
-
+//= require boomerang.min
 //= require_tree .
