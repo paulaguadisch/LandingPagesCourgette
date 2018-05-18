@@ -68,6 +68,10 @@
                                         </h3>
 
                                     <a href="#" class="btn btn-styled btn-base-1 btn-circle mt-5 animated" data-animation-in="flipInY" data-animation-delay="1500" data-scroll-to="#scrollToSection">Learn more</a>
+
+                                    <p><%= form_for @user, url: {action: "create"} do |f| %>
+                                    <%= f.text_field :email %><button class= "btn btn-default">Envoyer mon mail!</button><% end %></p>
+                                    
                                 </div>
                             </div>
                         </div>

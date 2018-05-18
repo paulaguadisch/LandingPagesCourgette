@@ -30,6 +30,10 @@
                                                     <img src="<%= image_path('lp2background.jpg') %>" class="img-fluid img-right animated" data-animation-in="fadeIn" data-animation-delay="200">
 
                                                 </div>
+
+                                                <p><%= form_for @user, url: {action: "create"} do |f| %>
+                                                <%= f.text_field :email %><button class= "btn btn-default">Envoyer mon mail!</button><% end %></p>
+
                                             </div>
                                         </div>
                                     </div>
